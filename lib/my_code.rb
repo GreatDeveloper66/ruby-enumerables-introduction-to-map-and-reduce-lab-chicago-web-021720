@@ -60,3 +60,15 @@ def reduce_to_all_true(arr)
   end
   result
 end
+
+def reduce_to_any_true(arr)
+  index = 0
+  result = false
+  arr.length.times do
+    if(arr[index] !== false && arr[index] !== nil)
+      result = true
+    end
+    index += 1
+  end
+  result
+end
