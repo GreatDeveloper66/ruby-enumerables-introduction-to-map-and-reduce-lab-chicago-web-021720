@@ -39,7 +39,7 @@ def reduce_to_total(arr, starting_point = 0)
   total = 0
   index = starting_point;
   if(index > arr.length)
-    return nil
+    return false
   end
   length = arr.length - starting_point
   length.times do
