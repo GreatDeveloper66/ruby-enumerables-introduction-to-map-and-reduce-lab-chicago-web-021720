@@ -35,11 +35,12 @@ def map_to_square(arr)
   arr
 end
 
-def reduce_to_total(arr, starting_point)
+def reduce_to_total(arr, starting_point = 0)
   total = 0
   index = starting_point;
-  puts index
-  puts arr.length
+  if(index > arr.length)
+    return nil
+  end
   length = arr.length - starting_point
   length.times do
     total += arr[index]
