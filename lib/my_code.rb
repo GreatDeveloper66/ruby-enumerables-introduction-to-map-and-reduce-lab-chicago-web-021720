@@ -34,3 +34,13 @@ def map_to_square(arr)
   end
   arr
 end
+
+def reduce_to_total(arr, starting_point = 0)
+  total = 0
+  index = 0;
+  arr.length.times do
+    total += arr[index]
+    index += 1
+  end
+  total
+end
