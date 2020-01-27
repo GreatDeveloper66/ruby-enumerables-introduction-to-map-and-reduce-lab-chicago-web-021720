@@ -38,11 +38,22 @@ end
 def reduce_to_total(arr, starting_point = 0)
   total = 0
   index = starting_point;
-  puts index
   length = arr.length - starting_point
   length.times do
     total += arr[index]
     index += 1
   end
   total
+end
+
+def reduce_to_all(arr)
+  index = 0
+  result = true
+  arr.length.times do
+    if(!arr[index]){
+      result = false
+    }
+    index += 1
+  end
+  result
 end
