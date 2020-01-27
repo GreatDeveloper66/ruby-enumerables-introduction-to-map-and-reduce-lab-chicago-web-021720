@@ -35,7 +35,7 @@ def map_to_square(arr)
   arr
 end
 
-def reduce_to_total(arr, starting_point = 0)
+def reduce_to_total(arr, starting_point)
   total = 0
   index = starting_point;
   puts index
@@ -50,10 +50,10 @@ end
 
 def reduce_to_all(arr)
   index = 0
-  result = True
+  result = true
   arr.length.times do
     if(!arr[index])
-      result = nil
+      result = false
     end
     index += 1
   end
