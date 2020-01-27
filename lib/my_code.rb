@@ -53,7 +53,7 @@ def reduce_to_all(arr)
   result = true
   arr.length.times do
     if(!arr[index])
-      result = false
+      result = nil
     end
     index += 1
   end
