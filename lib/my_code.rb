@@ -49,11 +49,11 @@ def reduce_to_total(arr, starting_point = 0)
   total
 end
 
-def reduce_to_all(arr)
+def reduce_to_all_true(arr)
   index = 0
   result = true
   arr.length.times do
-    if(!arr[index])
+    if(arr[index] == false || arr[index] == nil)
       result = false
     end
     index += 1
