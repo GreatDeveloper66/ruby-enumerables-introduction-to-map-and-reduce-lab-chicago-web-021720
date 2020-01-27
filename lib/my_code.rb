@@ -37,7 +37,7 @@ end
 
 def reduce_to_total(arr, starting_point = 0)
   total = 0
-  if(starting_point >= arr.length)
+  if(starting_point > arr.length)
     starting_point = 0
   end
   index = starting_point;
