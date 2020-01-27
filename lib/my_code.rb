@@ -38,6 +38,7 @@ end
 def reduce_to_total(arr, starting_point = 0)
   total = 0
   index = starting_point;
+  puts index
   length = arr.length - starting_point
   length.times do
     total += arr[index]
