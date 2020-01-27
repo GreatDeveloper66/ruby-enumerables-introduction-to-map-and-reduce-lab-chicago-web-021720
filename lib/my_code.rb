@@ -16,3 +16,21 @@ def map_to_no_change(arr)
   end
   arr
 end
+
+def map_to_double(arr)
+  index = 0;
+  arr.length.times do
+    arr[index] = arr[index] * 2
+    index += 1
+  end
+  arr
+end
+
+def map_to_square(arr)
+  index = 0;
+  arr.length.times do
+    arr[index] = arr[index] * arr[index]
+    index += 1
+  end
+  arr
+end
