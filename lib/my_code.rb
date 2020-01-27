@@ -50,9 +50,9 @@ def reduce_to_all(arr)
   index = 0
   result = true
   arr.length.times do
-    if(!arr[index]){
+    if(!arr[index])
       result = false
-    }
+    end
     index += 1
   end
   result
