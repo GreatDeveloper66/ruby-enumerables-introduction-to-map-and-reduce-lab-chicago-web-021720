@@ -65,7 +65,7 @@ def reduce_to_any_true(arr)
   index = 0
   result = false
   arr.length.times do
-    if(arr[index] !== false && arr[index] !== nil)
+    if(arr[index])
       result = true
     end
     index += 1
