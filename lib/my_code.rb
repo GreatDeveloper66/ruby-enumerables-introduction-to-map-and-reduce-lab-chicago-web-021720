@@ -36,6 +36,7 @@ def map_to_square(arr)
 end
 
 def reduce_to_total(arr, starting_point = 0)
+  puts arr
   total = 0
   if(starting_point > arr.length)
     starting_point = 0
